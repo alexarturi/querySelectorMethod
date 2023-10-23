@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script>
+	function initialize() {
+		document.querySelector("#thing").addEventListener("click", fun);
+	}
+    function fun() {
+        document.querySelector("#cool").innerHTML += " cool";
+    }
+    </script>
+    
+  </head>
+  <body onload = "initialize();">
+    <button id = "thing">Click Me!</button>
+    <span id = "cool">You are so</span>
+  </body>
+</html>
